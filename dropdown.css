@@ -3,61 +3,65 @@
   
   overflow: hidden;
   background-color: #333;
-  padding: inherit;
+  padding:30px;
+
 }
+
 
 /*links*/
 .navbar a, .dropdown:hover {
   float: center;
-  font-size: 30px;
+  font-size: 40px;
   
   color: white;
-  text-align: center;
-  padding: 10px 60px;
+  padding: 100px 80px;
   text-decoration: none;
 }
+
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: black;
-}
+  
+} 
 
 
 /* the container*/
 .dropdown {
-  float: inherit;
-  overflow: inherit;
-     display: inline-block;
+  float:inherit;
+  overflow:visible;
+  display: inline-block;
+  position: fixed;
+  
 }
 
 
 /*the button */
 .dropdown .dropbtn {
-  font-size: 30px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 0px 0px;
-  background-color: inherit;
-
-  margin: 0;
+  font-size:40px;  
+  border:none;
+  outline:inherit;
+  padding:inherit;
+  margin:auto;
 }
 
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: relative;
+  display:none;
+  position:relative;
   background-color: #f9f9f9;
-  min-width: 30px;
+  min-width:none;
+  max-width:none;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-    max-width: 160px;
+  z-index: 999;
+  
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  float: none;
+  float:none;
+    position: static;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -72,5 +76,5 @@
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:block;
 }
